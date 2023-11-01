@@ -20,7 +20,7 @@ Execution time is printed
 Edges are printed
 
 Currently - Berkeley DB is set as default
-Uncomment in memory section and comment the Berkeley section to use in-memory backend database
+Uncomment in the Janus Graph Example class to use - inmemory and comment the Berkeley section.
 
 
 Please do read the attached report.txt as well
