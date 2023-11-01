@@ -1,0 +1,61 @@
+
+I am not a java expert, its been years since I worked something in JAVA, 
+But to me Programming language is just a tool for a developers imagination.
+All you need to know is programming fundamentals.
+
+Personal Laptop
+OS - Mac M1
+
+T2 
+
+1 - Installed Java 8, Maven and Worked on IntelliJ
+
+2 - A - Used the dependency mentioned for janusgraph-core
+    B - Used the dependency mentioned for janusgraph-inmemory
+    C - Defined the schema using gremlin query language as mentioned in the DOC
+    D - Loaded the datasets
+
+    Janusgraph - In-memory stats 
+    
+    Total Vertices count is 3748. (Includes Airports, Countries and Continents)
+    Count of Edges is 57645 (Includes Routes and Contains Relations)
+    Total Load Time Excluding fetching data from CSV is: 17941 milliseconds
+    Total File size is irrelevant, as it is in-memory so might be advised to consider taking it as 
+java's heap memory
+    
+
+
+3 - A - Used the dependency Mentioned for janusgraph-berkaleyDB
+    B - The Entire DB is loaded
+    C - Total Vertices count is 3748. (Includes Airports, Countries and Continents)
+	Count of Edges is 57645 (Includes Routes and Contains Relations)
+        Total Load Time Excluding fetching data from CSV is: 18851 milliseconds
+	Total File Size is 69,96,254 bytes
+
+4 - A - Not able to install the one which is attached with the mail
+         
+
+$mvn package -DskipTests
+Failed to execute goal on project janusgraph-foundationdb: Could not resolve dependencies for project org.janusgraph:janusgraph-foundationdb:jar:0.5.3-nugraph-1.7.5-RELEASE: The following artifacts could not be resolved: org.janusgraph:janusgraph-core:jar:0.5.3-nugraph-1.6.5-RELEASE (absent), org.janusgraph:janusgraph-backend-testutils:jar:0.5.3-nugraph-1.6.5-RELEASE (absent), org.janusgraph:janusgraph-test:jar:0.5.3-nugraph-1.6.5-RELEAS
+
+Not able to download decencies
+
+B - Done
+C - Done
+Was able to Download normal Foundation DB from https://github.com/JanusGraph/janusgraph-foundationdb
+Configured Locally and played around with it, using the same data(i.e, Air routes) using fdbcli
+
+D - Was not able to use it is a maven Dependency, tried multiple things but nothing worked out, might require some more time 
+
+E - Loaded the entire AirRoutes Graph, into it. Using janusgraph and foundationDB as backend in the backend but using CLI though
+
+F - Not accurate as was not using it as maven dependency
+
+Note: Thoroughly Enjoyed the Task
+    
+
+
+
+
+
+        
